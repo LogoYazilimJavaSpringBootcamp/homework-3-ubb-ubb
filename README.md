@@ -15,7 +15,7 @@ Linkedin tarafından geliştirilmiş, sonrasında Apache tarafından satın alı
 - Herhangi mesaj kuyruklama sistemi gibi, Kafka kayıt akışlarının yayınlanmasına ve izlenmesine izin verir.
 - Kayıt akışları hata tolerans yaklaşımı (tek bir hatada sistemin ara vermeden devam etmesi) ile depolar.
 - Uygulamalara decouplinge uygun olduğu için ölçeklenebilir.
-- Kolayca ulaşışabilir.
+- Kolayca ulaşılabilir.
 - Sisteme giren yüksek verinin kontrol edilmesini sağlar.
 
 Kafka kullanmanın en büyük avantajı, her bölümün farklı makinelerde barındırılmasıyla tüm topiclerin paralel şekilde kullanılmasını sağlar. Kullanıcılar paralel şekilde topiclere ulaşır.
@@ -86,7 +86,7 @@ public class MyKafkaStreamsConfiguration {
 
 ### ActiveMQ
 
-ActiveMQ poopüler açık kaynak kodlu mesaj servisidir. Java dilinde yazılmıştır. Diğer servisler gibi, ayrı serverlarda bulunan birden fazla uygulamanın iletişimini sağlar.
+ActiveMQ popüler açık kaynak kodlu mesaj servisidir. Java dilinde yazılmıştır. Diğer servisler gibi, ayrı serverlarda bulunan birden fazla uygulamanın iletişimini sağlar.
 JMS (Java Message Service) API'sinin implementasyonudur. AMQP-MQTT protokolünü kullanır.
 
 - Birden fazla bağlantı protokolü destekliyor.
