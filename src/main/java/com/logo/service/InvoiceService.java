@@ -6,12 +6,15 @@ import com.logo.repository.InvoiceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * Invoice service class contains simple business logic for Invoice objects.
+ * Takes instruction from controller, submit them to Repository class, returns object to controller
+ */
 @Service
 public class InvoiceService {
 
     @Autowired
     InvoiceRepository invoiceRepository;
-
 
     public Invoice save(Invoice invoice) {
         return invoiceRepository.save(invoice);
@@ -35,11 +38,4 @@ public class InvoiceService {
 
        return invoiceRepository.save(invoiceToUpdate);
    }
-
-
-
-
-
-
-
 }

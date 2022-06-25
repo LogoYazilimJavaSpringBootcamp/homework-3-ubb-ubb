@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * This class represents controller for Accounts.
+ * Client will be communicated with this class.
+ * Requests are transferred to service class.
+ */
 @RestController
 @RequestMapping(value = "/accounts")
 public class AccountController {
@@ -39,9 +44,4 @@ public class AccountController {
     public Account deleteAccount(@RequestParam(value = "id") long id) {
         return accountService.deleteAccount(id);
     }
-
-
-
-
-
 }

@@ -1,16 +1,15 @@
 package com.logo.repository;
-
-import com.logo.model.enums.Status;
 import com.logo.model.invoice.Invoice;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
-@Repository
+/**
+ * InvoiceRepository extends from CrudRepository
+ * Uses JPA specification and Hibernate implementation and abstracts SQL queries *
+ */
+@Service
 public interface InvoiceRepository extends CrudRepository<Invoice,Long> {
-
     public Invoice findById(long id);
     public Invoice findByTotalPrice(double price);
     public Invoice deleteById(long id);
-
-
 }

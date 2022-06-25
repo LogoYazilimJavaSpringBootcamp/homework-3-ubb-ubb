@@ -9,10 +9,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * This class represents controller for Customer.
+ * Client will be communicated with this class.
+ * Requests are transferred to service class.
+ */
 @RestController
 @RequestMapping(value = "/customers")
 public class CustomerController {
-
 
     @Autowired
     public CustomerService customerService;
@@ -41,5 +45,4 @@ public class CustomerController {
     public Customer deleteById(@RequestParam(value ="id") long id) {
         return customerService.deleteById(id);
     }
-
 }

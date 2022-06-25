@@ -4,19 +4,18 @@ import com.logo.model.company.Account;
 import com.logo.repository.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
-
+/**
+ * Account service class contains simple business logic for Account objects.
+ * Takes instruction from controller, submit them to Repository class, returns object to controller
+ */
 @Service
-@Transactional
 public class AccountService {
 
     @Autowired
     AccountRepository accountRepository;
 
     public Account createAccount(Account account) {
-
         accountRepository.save(account);
         return account;
     }
@@ -50,7 +49,6 @@ public class AccountService {
         if (account.getBalance() != null) {
             accountToUpdate.setBalance(account.getBalance());
         }
-
         accountRepository.save(accountToUpdate);
         return accountToUpdate;
 
@@ -59,5 +57,4 @@ public class AccountService {
     public Account deleteAccount(long id) {
         return accountRepository.deleteById(id);
     }
-
 }

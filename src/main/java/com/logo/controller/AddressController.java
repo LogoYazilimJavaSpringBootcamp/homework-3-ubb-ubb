@@ -5,6 +5,11 @@ import com.logo.service.AddressService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * This class represents controller for Address.
+ * Client will be communicated with this class.
+ * Requests are transferred to service class.
+ */
 @RestController
 @RequestMapping(value = "/address")
 public class AddressController {
