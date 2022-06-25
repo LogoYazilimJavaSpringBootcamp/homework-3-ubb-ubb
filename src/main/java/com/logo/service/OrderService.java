@@ -15,7 +15,7 @@ public class OrderService {
 
 		System.out.println("OrderService - productService:" + productService.toString());
 
-		System.out.println("OrderService - productService:" + productService.url);
+		//System.out.println("OrderService - productService:" + productService.url);
 
 	}
 

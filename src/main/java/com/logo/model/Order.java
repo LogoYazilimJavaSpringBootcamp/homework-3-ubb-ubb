@@ -1,5 +1,7 @@
 package com.logo.model;
 
+import com.logo.model.item.Product;
+
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;

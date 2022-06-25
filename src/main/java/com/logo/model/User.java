@@ -3,6 +3,8 @@ package com.logo.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.logo.model.company.Address;
+import com.logo.model.company.Customer;
 import com.logo.model.enums.FirmType;
 
 public class User {

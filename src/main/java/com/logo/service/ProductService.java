@@ -1,25 +1,29 @@
 package com.logo.service;
 
+import com.logo.model.item.Product;
+import com.logo.repository.AccountRepository;
+import com.logo.repository.ProductRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 @Scope("prototype")
 public class ProductService {
 
-	public String url = "default url";
-	public String username = "default username";
-	public String password = "default password";
 
-	public ProductService() {
-		super();
+	@Autowired
+	ProductRepository productRepository;
+
+	public List<Product> getProductList() {
+		return productRepository.getProductList();
 	}
 
-	public ProductService(String url, String username, String password) {
-		super();
-		this.url = url;
-		this.username = username;
-		this.password = password;
+	public Product createProduct(Product product) {
+		return productRepository.save(product);
 	}
+
 
 }

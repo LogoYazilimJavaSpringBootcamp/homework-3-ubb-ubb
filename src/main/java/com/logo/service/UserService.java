@@ -7,7 +7,7 @@ import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.logo.model.Customer;
+import com.logo.model.company.Customer;
 import com.logo.model.User;
 import com.logo.repository.UserRepository;
 
